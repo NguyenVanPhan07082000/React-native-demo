@@ -1,0 +1,53 @@
+{
+    "expo": {
+        "name": "init-sourc-mobile",
+        "slug": "init-sourc-mobile",
+        "scheme": "mobile",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./src/assets/icon.png",
+        "userInterfaceStyle": "dark",
+        "splash": {
+            "image": "./src/assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#fff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSCameraUsageDescription": "This app uses the camera to scan barcodes on event tickets."
+            }
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./src/assets/adaptive-icon.png",
+                "backgroundColor": "#fff"
+            },
+            "package": "com.oryza.erp",
+            "versionCode": 1,
+            "softwareKeyboardLayoutMode": "pan",
+            "blockedPermissions": ["android.permission.RECORD_AUDIO"]
+        },
+        "web": {
+            "favicon": "./src/assets/favicon.png"
+        },
+        "extra": {
+            "eas": {
+                "projectId": "a3d1fe19-294d-4d67-878e-a09d1fbc0538"
+            }
+        },
+        "plugins": [
+            [
+                "expo-media-library",
+                {
+                    "photosPermission": "Allow $(init-sourc-mobile) to access your photos.",
+                    "savePhotosPermission": "Allow $(init-sourc-mobile) to save photos."
+                }
+            ]
+        ]
+    }
+}
